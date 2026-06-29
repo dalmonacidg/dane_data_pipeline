@@ -32,6 +32,8 @@ def load_ocupados():
     # Basic cleaning of null data in revenue
     df['INGLABO'] = df['INGLABO'].fillna(0)
 
+    df.columns = df.columns.str.lower()
+
     print(f"📊 Registros cargados en memoria: {len(df)}")
     print("💾 Inyectando datos en PostgreSQL...")
 
