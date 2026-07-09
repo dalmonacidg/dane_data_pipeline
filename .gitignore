@@ -1,33 +1,26 @@
+# --- Archivos de Datos y Carpetas de Datos ---
+data/
 *.csv
 *.CSV
-data/
 *.parquet
 *.xlsx
 
+# --- Entornos Virtuales y Variables de Entorno ---
 .env
 venv/
 .venv/
 
+# --- Cache de Python ---
 __pycache__/
 *.pyc
-data/*.CSV
-data/*.csv
-data/*.CSV
-data/*Zone.Identifier*
 
-.idea/dataSources.xml
-.idea/dataSources.local.xml
-.idea/data_source_mapping.xml
-.idea/sqldialects.xml
-.idea/workspace.xml
-.idea/shelf/
-.idea/dataSources/
-.idea/vcs.xml
+# --- Configuraciones del IDE (PyCharm) ---
+.idea/
 
+# --- Archivos del Sistema Operativo ---
 Thumbs.db
 desktop.ini
 *.bak
 *.swp
-
 *.sql.bak
 pgdata/

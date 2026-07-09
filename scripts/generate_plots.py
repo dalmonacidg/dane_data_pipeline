@@ -70,8 +70,8 @@ def main():
 
     sns.barplot(data=dpto_summary, x='inglabo', y='dpto', hue='dpto', palette='viridis', legend=False)
 
-#    formatter = ticker.StrMethodFormatter('${x:,.0f}')
-#    plt.gca().xaxis.set_major_formatter(formatter)
+    formatter = ticker.StrMethodFormatter('${x:,.0f}')
+    plt.gca().xaxis.set_major_formatter(formatter)
 
     plt.title('Average Monthly Salary by Department Code (DANE)', pad=15)
     plt.xlabel('Average Salary ($)')
