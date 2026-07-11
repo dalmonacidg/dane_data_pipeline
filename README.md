@@ -16,15 +16,15 @@ An end-to-end Data Engineering pipeline that ingests public microdata from Colom
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
+| Layer | Technology                           |
+|---|--------------------------------------|
 | OS Environment | Windows 11 + WSL2 (Ubuntu 22.04 LTS) |
-| Language | Python 3 (virtualenv) |
-| Database | PostgreSQL 14 |
-| ORM / Connector | SQLAlchemy + Psycopg2 |
-| Data Processing | Pandas |
-| Visualization | Matplotlib, Seaborn |
-| IDE | PyCharm Professional |
+| Language | Python 3 (virtualenv)                |
+| Database | PostgreSQL 18                        |
+| ORM / Connector | SQLAlchemy + Psycopg2                |
+| Data Processing | Pandas                               |
+| Visualization | Matplotlib, Seaborn                  |
+| IDE | PyCharm Professional                 |
 
 ---
 
@@ -81,7 +81,8 @@ Data comes from the **Gran Encuesta Integrada de Hogares (GEIH)** published mont
 > 1. Go to the DANE microdata catalog above
 > 2. Search for "Gran Encuesta Integrada de Hogares"
 > 3. Select the March 2026 edition
-> 4. Download the **Ocupados** module and place the CSV in the `data/` folder
+> 4. Download and unzip the .zip file
+> 5. Open the CSV folder and place the **Ocupados** CSV file in the `data/` folder
 
 ---
 
@@ -168,8 +169,8 @@ Queries the transformed data and outputs PNG plots to the `reports/` folder.
 
 ## Sample Output
 
-> *(Add a screenshot of one of your plots here)*
-> `![Income distribution by occupation](reports/sample_plot.png)`
+> *![img.png](img.png)*
+> `Income distribution(reports/1_income_distribution.png)`
 
 ---
 
